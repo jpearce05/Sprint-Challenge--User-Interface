@@ -36,13 +36,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+- Semtantic HTML helps you and other members on your team understand where to find the appropriate section of the code. It also helps you troubleshoot or make changes to the code because you can know based on the tag description what the code is doing and/or behaving. The other benefit is for accessability.  Screen readers are helped by semantic tags.  
+
 2. What are the 4 areas of the box model?
+
+- The box model has "box" a "Margin Edge", "Border Edge", "Padding Edge" and "Content Edge".  These are all boxes within boxes.  
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+- The cross axis
+
 4. Explain why git is valuable to a team of developers.
 
+- Git allows you to submit a "branch" to the code base which then allows somoene on the team to review it before it's merged with the "Master.  
+
 5. Define mobile-first design in your own words.
+
+- Mobile first is an approach to design that starts with the setting the base project so that it is optimized for mobile.  And then once it is a mobile gem then the other viewports can be used so that it looks good on tablets and desktop computers. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

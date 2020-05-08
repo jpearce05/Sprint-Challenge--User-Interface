@@ -47,8 +47,15 @@ table {
 	border-spacing: 0;
 }
 
+/* Global CSS */
+
 * {
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%
 }
 
 html, body {
@@ -57,8 +64,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -71,6 +78,49 @@ p {
     margin: 0 auto;
 }
 
+
+/* Navigation */
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0 40px 0;
+}
+.header a {
+    color:black;
+    text-decoration: none;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 2px 40px 2px; 
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: flex;
+    /* justify-content: center; */
+    font-size: 1.6rem;
+    padding: 15px 5px;
+   
+}
+
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,10 +129,16 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content img {
+    padding: 20px;
+}
+
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -94,6 +150,20 @@ p {
     padding: 0 2%;
     margin-bottom: 0;
 }
+
+/* Box colors */
+
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
 
 .middle-content .boxes {
     display: flex;
@@ -112,6 +182,53 @@ p {
     justify-content: center;
 }
 
+
+#box1 {
+    background:#008080;
+}
+
+#box2 {
+    background: #FFD700;
+}
+
+
+#box3 {
+    background: #5F9EA0;
+}
+
+#box4 {
+    background: #FF7F50;
+}
+
+#box5 {
+    background: #DC143C;
+}
+
+/* Second section of boxes */
+
+#box6 {
+    background:#228B22;
+}
+
+#box7 {
+    background: #9932CC;
+}
+
+
+#box8 {
+    background: #FF69B4;
+}
+
+#box9 {
+    background: #4B0082;
+}
+
+#box10 {
+    background: #1E90FF;
+}
+
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -120,6 +237,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -144,3 +262,116 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+
+    /* Medium size, less than 800 */
+    
+
+@media (max-width: 799.98px) {
+
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Navigtation (nav .header) */
+
+    .header {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header a {
+        padding: 1rem;
+    }
+
+   /* Boxes */
+    .middle-content .boxes .box {
+        display: flex;
+        width: 45%;
+        height: 15rem;
+        margin: 20px .5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         
+      }
+
+
+/* Small size, less than 500 */
+
+@media (max-width: 499.98px) {
+
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Navigtation  */
+
+    .header {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header a {
+        padding: 1rem;
+    }
+
+    .top-content {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .top-content img {
+        align-items: center;
+        object-fit: contain;
+        width: 90%;
+    }
+
+    .top-content .text-container {
+        align-items: center;
+    }
+
+   /* Boxes */
+
+   .middle-content .boxes .box {
+    display: flex;
+    width: 60%;
+    height: 15rem;
+    margin: 20px .5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+  }
+
+  /*  Bottom Content */
+
+  .bottom-content {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.bottom-content .text-container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    width: 80%;
+    padding: 10px;
+}
+
